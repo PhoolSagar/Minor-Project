@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  /* Removed background-color and color properties here */
+}
+
+/* Header Styling */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #06502b; /* Deep green background for header */
+}
+
+/* Logo Styling */
+header img {
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+
+/* Logo Text Styling */
+.logo {
+  color: goldenrod; /* Golden color for logo text */
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+/* Header Links Styling */
+header a {
+  color: #fff; /* White text color for links */
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Button Styling */
+.auth-buttons .btn {
+  margin-left: 10px;
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: #f2c94c; /* Yellow button color */
+  color: #000; /* Black text color for buttons */
+  border-radius: 5px;
+}
+
+/* Signup Button Styling */
+.auth-buttons .signup {
+  background-color: #fff; /* White background for signup button */
+  color: #06502b; /* Dark green text color for signup */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For medium to small screens (Tablet and below) */
+@media (max-width: 768px) {
+  #header {
+      flex-direction: column;
+      padding: 15px;
+  }
+
+  header img {
+      margin-left: 0;
+      margin-bottom: 10px;
+  }
+
+  .logo {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+
+  header a {
+      margin: 10px 0;
+  }
+
+  .auth-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .auth-buttons .btn {
+      margin-left: 0;
+      margin-bottom: 10px;
+  }
+}
+
+/* For very small screens (Mobile) */
+@media (max-width: 480px) {
+  #header {
+      padding: 10px;
+  }
+
+  .logo {
+      font-size: 16px;
+  }
+
+  header a {
+      font-size: 14px;
+      margin: 5px 0;
+  }
+
+  .auth-buttons .btn {
+      padding: 10px 20px;
+  }
+}

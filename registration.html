@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="shortcut icon" href="/media/image/logo.jpg" type="image/x-icon">
+    <!-- External Font from Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="registration.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="">
+        <h1>Registration</h1>
+
+        <!-- Name and Username Section -->
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" placeholder="Full name" required />
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="input-field">
+            <input type="text" placeholder="Username" required />
+            <i class="bx bxs-user"></i>
+          </div>
+        </div>
+
+        <!-- Email and Phone Section -->
+        <div class="input-box">
+          <div class="input-field">
+            <input type="email" placeholder="Email" required />
+            <i class="bx bxs-envelope"></i>
+          </div>
+          <div class="input-field">
+            <input type="number" placeholder="Phone number" required />
+            <i class="bx bxs-phone"></i>
+          </div>
+        </div>
+
+        <!-- Password Section -->
+        <div class="input-box">
+          <div class="input-field">
+            <input type="password" placeholder="Password" required />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+          <div class="input-field">
+            <input type="password" placeholder="Confirm Password" required />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+        </div>
+
+        <!-- Terms Checkbox -->
+        <label>
+          <input type="checkbox" /> I hereby declare that the above information provided is true and correct
+        </label>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn">Register</button>
+      </form>
+    </div>
+
+    <!-- Footer Section -->
+    
+    <script src="loadContent.js"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    flex-direction: column;
+}
+
+/* Button Styling */
+.button-container {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    background-color: #06502b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #053c20;
+}
+
+/* Form Container Styling */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Switch between forms */
+.switch-form {
+    font-size: 14px;
+}
+
+.switch-form a {
+    text-decoration: none;
+    color: #06502b;
+}
+
+.switch-form a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    /* Mobile devices */
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .form-container {
+        width: 90%; /* Make the form container take up more width */
+        padding: 30px;
+    }
+
+    .input-field input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .btn {
+        margin: 10px 0; /* Space out buttons vertically */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Smaller mobile devices */
+    .btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .input-field input {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .switch-form {
+        font-size: 12px;
+    }
+}

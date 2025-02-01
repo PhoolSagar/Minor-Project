@@ -1,0 +1,163 @@
+/* Footer Styles */
+.footer {
+    background-color: #1c252b;
+    color: #ccc;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px 20px;
+}
+
+.footer-section h2, .footer-section h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-section span {
+    color: #d1f531; /* Highlighted color */
+}
+
+.footer-section .social-icons a {
+    color: #d1f531;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-section form input {
+    padding: 8px;
+    width: 70%;
+    border: none;
+    margin-right: 5px;
+}
+
+.footer-section form button {
+    background-color: #d1f531;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.footer-section .privacy {
+    margin-top: 10px;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+.footer-bottom nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-bottom nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom p a {
+    color: #d1f531;
+    text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For medium to small screens (Tablet and below) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-section form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section form input {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .footer-section form button {
+        width: 80%;
+    }
+
+    .footer-bottom {
+        margin-top: 30px;
+        padding-top: 20px;
+    }
+
+    .footer-bottom nav a {
+        margin: 0 5px;
+    }
+}
+
+/* For very small screens (Mobile) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-container {
+        padding: 0 10px;
+    }
+
+    .footer-section h2, .footer-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-section p, .footer-section span {
+        font-size: 0.9rem;
+    }
+
+    .footer-section form input {
+        width: 100%;
+    }
+
+    .footer-section form button {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        padding-top: 20px;
+    }
+}
